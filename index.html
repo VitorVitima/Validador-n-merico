@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        :root {
+            --cor1: #660373;
+            --cor2: #D9048E;
+            --cor3: #F8E5EE;
+            --cor4: #000000;
+            --cor5: #FCE762;
+        }
+        body {
+            height: 98.5vh;
+            background-image: linear-gradient(40deg, #D9048E, #660373) ;
+        }
+        header h1 {
+            color: var(--cor3);
+            text-align: center;
+            margin: 10px 0px;
+        }
+        main {
+            width: fit-content;
+            padding: 10px;
+            height: fit-content;
+            background-color: var(--cor5);
+            border: 1px solid black;
+            margin: auto;
+            box-shadow: 5px 5px 7px #00000063;
+        } 
+        input#number {
+            box-sizing: border-box;
+            padding-left: 3px;
+        }
+        article#valores {
+            background-color: var(--cor3);
+            width: 200px;
+            height: 200px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            margin: 20px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer{
+            margin: 15px auto;
+            text-align: center;
+        }
+        footer a {
+            color: var(--cor3);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Validador númerico</h1>
+    </header>
+    <main>
+        <section id="conteudo">
+            <article id="inputs">
+                <label for="number">Escolha um número:</label>
+                <input type="number" id="number">
+                <input type="submit" value="Salvar" onclick="salvar()">
+            </article>
+            <article id="valores">
+
+            </article>
+            <input type="submit" value="Validar" onclick="validar()">
+            <article id="validarValores">
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a target="_blank" href="https://twitter.com/VVitima">@VVitima</a>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
